@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice Generator App</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="index.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body onload="getAdvice()">
+    <div class="nav"><h1 class="title">Advice generator app</h1></div>
+    <div class="outer-container">
+      <div class="main-container">
+        <p class="advice-number">advice #<span id="advice-number"></span></p>
+        <h2 class="advice-text">"<span id="advice-text"></span>"</h2>
+        <img
+          src="/pattern-divider-desktop.svg"
+          alt="divider"
+          class="divider desktop"
+          aria-hidden="true"
+        />
+        <img
+          src="/pattern-divider-mobile.svg"
+          alt="divider"
+          class="divider mobile"
+          aria-hidden="true"
+        />
+        <button type="button" class="button-container" id="advice-button">
+          <img src="icon-dice.svg" alt="Advice button with a dice icon" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

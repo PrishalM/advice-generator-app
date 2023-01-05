@@ -1,0 +1,110 @@
+// Primary
+@Light-Cyan: hsl(193, 38%, 86%);
+@Neon-Green: hsl(150, 100%, 66%);
+
+// Neutral
+@Grayish-Blue: hsl(217, 19%, 38%);
+@Dark-Grayish-Blue: hsl(217, 19%, 24%);
+@Dark-Blue: hsl(218, 23%, 16%);
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: @Dark-Blue;
+  margin: 0;
+  .nav {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @Dark-Grayish-Blue;
+    .title {
+      font-size: 24px;
+      text-align: center;
+      margin: 0;
+      color: @Light-Cyan;
+    }
+    @media screen and (max-width: 600px) {
+      .title {
+        font-size: 20px;
+      }
+    }
+  }
+  .outer-container {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    .main-container {
+      width: 440px;
+      background-color: @Dark-Grayish-Blue;
+      border-radius: 15px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 50px 0 50px;
+      .advice-number {
+        text-transform: uppercase;
+        color: @Neon-Green;
+        font-size: 14px;
+        letter-spacing: 0.25em;
+        padding-bottom: 35px;
+        margin: 0;
+      }
+      .advice-text {
+        color: @Light-Cyan;
+        font-size: 28px;
+        text-align: center;
+        margin: 0;
+      }
+      .divider {
+        padding: 35px 0 0;
+      }
+      .divider.mobile {
+        display: none;
+      }
+      .button-container {
+        background-color: @Neon-Green;
+        height: 64px;
+        width: 64px;
+        border-radius: 35px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        bottom: -35px;
+        padding: 20px 20px 17px 20px;
+      }
+      .button-container:hover {
+        box-shadow: 0px 0px 30px 20px rgba(82, 255, 168, 0.25);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .main-container {
+        width: inherit;
+        height: auto;
+        margin: auto 15px;
+        padding: 50px 50px 0 50px;
+        .advice-number {
+          font-size: 12px;
+          padding-bottom: 35px;
+          padding-top: 0;
+        }
+        .advice-text {
+          font-size: 24px;
+        }
+        .divider.desktop {
+          display: none;
+        }
+        .divider.mobile {
+          display: block;
+        }
+        .button-container {
+          bottom: -30px;
+        }
+      }
+    }
+  }
+}
