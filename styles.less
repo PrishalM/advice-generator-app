@@ -32,7 +32,7 @@ body {
     }
   }
   .outer-container {
-    height: 90vh;
+    height: 85vh;
     width: 100vw;
     display: flex;
     .main-container {
@@ -104,6 +104,29 @@ body {
         .button-container {
           bottom: -30px;
         }
+      }
+    }
+  }
+  footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @Dark-Grayish-Blue;
+    .footer,
+    .footer a {
+      font-size: 14px;
+      text-align: center;
+      margin: 0;
+      color: @Light-Cyan;
+    }
+    .footer a:hover {
+      color: @Neon-Green;
+    }
+    @media screen and (max-width: 600px) {
+      .footer,
+      .footer a {
+        font-size: 12px;
       }
     }
   }
