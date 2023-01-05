@@ -25,7 +25,7 @@ Create an advice generator app and should meet the following criteria:
 
 ### Screenshot
 
-![Design preview for the Advice generator app coding challenge](.desktop-preview.jpg)
+![Design preview for the Advice generator app coding challenge](desktop-preview.jpg)
 
 ### Links
 
